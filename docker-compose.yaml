@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  rest_api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - app-network
+    depends_on:
+      - db
+    ports:
+      - "8081:8081"
+
+  db:
+    image: postgres:13-alpine
+    restart: always
+    networks:
+      - app-network
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres-data:

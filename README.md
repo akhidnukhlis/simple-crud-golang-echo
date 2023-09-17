@@ -101,7 +101,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/akhidnukhlis/simple-crud-go-echo
+   git clone https://github.com/akhidnukhlis/simple-crud-golang-echo
    ```
 2. Enter your API in `config.js`
    ```JS
@@ -135,7 +135,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Name - [@akhidnukhlis](https://linkedin.com/akhidnukhlis) - nukhlis@gmail.com
 
-Project Link: [https://github.com/akhidnukhlis/simple-crud-go-echo](https://github.com/akhidnukhlis/simple-crud-go-echo)
+Project Link: [https://github.com/akhidnukhlis/simple-crud-golang-echo](https://github.com/akhidnukhlis/simple-crud-go-echo)
 
 
 
