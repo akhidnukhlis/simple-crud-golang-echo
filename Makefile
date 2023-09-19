@@ -16,9 +16,6 @@ run-api:
 build-api:
 	go build -v -o ./bin/ ./
 
-#test:
-#	go test -v -cover -benchmem ./...
-
 mock:
 	mockery --all
 
