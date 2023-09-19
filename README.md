@@ -150,11 +150,6 @@ Project Link: [https://github.com/akhidnukhlis/simple-crud-golang-echo](https://
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://github.com/akhidnukhlis/simple-crud-go-echo)
-
-
 
 
 
