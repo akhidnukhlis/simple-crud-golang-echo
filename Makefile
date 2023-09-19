@@ -2,12 +2,10 @@ migration-create:
 	migrate create -ext sql -dir migrations/sql/ $(name)
 
 migration-up:
-	#migrate -path migrations/sql -verbose -database "${DATABASE_URL}" up
-	migrate -path migrations/sql -verbose -database "postgresql://postgres:password@localhost:5432/postgres?sslmode=disable" up
+	migrate -path migrations/sql -verbose -database "${DATABASE_URL}" up
 
 migration-down:
-	#migrate -path migrations/sql -verbose -database "${DATABASE_URL}" down
-	migrate -path migrations/sql -verbose -database "postgresql://postgres:password@localhost:5432/postgres?sslmode=disable" down
+	migrate -path migrations/sql -verbose -database "${DATABASE_URL}" down
 
 run-db:
 	docker compose up postgres redis

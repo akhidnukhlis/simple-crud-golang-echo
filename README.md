@@ -103,16 +103,27 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/akhidnukhlis/simple-crud-golang-echo
    ```
-2. Enter your API in `config.js`
+2. Enter your API in `.ENV`
    ```JS
-   const DB_USERNAME = 'ENTER YOUR DATABASE USER';
-   const DB_PASSWORD = 'ENTER YOUR DATABASE PASSWORD';
-   const DB_PORT = 'ENTER YOUR DATABASE PORT';
-   const DB_HOST = 'ENTER YOUR DATABASE HOST';
-   const DB_NAME = 'ENTER YOUR DATABASE NAME';
+   DB_USERNAME  = 'ENTER YOUR DATABASE USER';
+   DB_PASSWORD  = 'ENTER YOUR DATABASE PASSWORD';
+   DB_PORT      = 'ENTER YOUR DATABASE PORT';
+   DB_HOST      = 'ENTER YOUR DATABASE HOST';
+   DB_NAME      = 'ENTER YOUR DATABASE NAME';
+   DB_DRIVER    = 'ENTER YOUR DATABASE DRIVER';
    ```
 
+2. Create table migration
+   ````
+   make migration-create name='ENTER YOUR TABLE NAME` 
+   ````
 
+3. Build up migration
+   ````
+   make migration-up DATABASE_URL='ENTER YOUR database configuration'
+   ````
+   
+   *example: postgresql://postgres:password@localhost:5432/postgres?sslmode=disable
 
 <!-- USAGE EXAMPLES -->
 ## Usage

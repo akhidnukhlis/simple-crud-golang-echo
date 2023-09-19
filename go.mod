@@ -8,7 +8,6 @@ require (
 	github.com/google/uuid v1.3.1
 	github.com/jinzhu/gorm v1.9.16
 	github.com/labstack/echo v3.3.10+incompatible
-	github.com/tkanos/gonfig v0.0.0-20180326121832-e83209aed2d1
 	golang.org/x/crypto v0.13.0
 )
 
